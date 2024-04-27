@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Personal Portfolio Website</title>
+    <style>
+        
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        a {
+            text-decoration: none;
+        }
+        .hero {
+            width: 100%;
+            height: 100vh;
+            background:  Url(https://wallpapercave.com/wp/wp6125905.jpg);
+            background-size: cover;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 100px;
+        }
+        .logo {
+            max-height: 60px;
+        }
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+        nav ul li a {
+            color: #241d23;
+            position: relative;
+            padding: 5px 0;
+        }
+        nav ul li a:hover {
+            color: #fd47eb;
+        }
+        nav ul li a:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: #fa47fd;
+            transition: 0.3s;
+            bottom: 0;
+        }
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+        .btn {
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2p/x;
+            padding: 16px 40px;
+            border-radius: 500px;
+            display: inline-block;
+            font-weight: 500;
+            transition: all 0.4s ease-in-out;
+            background-size: 152% 100%;
+            background: #fd47c6;
+            border: 2px solid #fd47f4;
+        }
+        .btn:hover {
+            background: transparent;
+            border-color: #fd47ae;
+            color: #fd47ae;
+        }
+        .content {
+            position: absolute;
+            top: 35%;
+            left: 8%;
+        }
+        .content .title {
+            color:black;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            display: inline-block;
+            margin-bottom: 20px;
+            background: linear-gradient(
+                120deg,
+                #1c99fe 20.69%,
+                #7644ff 50.19%,
+                #fd4766 79.69%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .content h1 {
+            color: rgb(0, 0, 0);
+            font-size: 75px;
+            font-weight: 900;
+            line-height: 90px;
+            text-transform: inherit;
+            width: 70%;
+        }
+        .content h1 span {
+            color: #c047fd;
+        }
+        .content p {
+            width: 55%;
+            color: #202020;
+            margin-top: 25px;
+            margin-bottom: 30px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <div class="hero">
+        <nav>
+           
+            <ul>
+                <li><a href="#" onclick="mylife()">Resume</a></li>
+                <li><a href="#" onclick="openWordFile()">View 10th Marksheet</a></li>
+                <li><a href="#" onclick="openme()">My hobbies</a></li>
+                <li><a href="#" onclick="mychoice()">Certificates</a></li>
+                
+            </ul>
+           
+        </nav>
+        <div class="content">
+            <h1> <span>Rishi's Portfolio</span></h1>
+            <p>
+                Welcome to my portfolio! I'm Rishi Sharma, a student at Sunder Deep College, dedicated to crafting compelling experiences through design and development. With a keen eye for detail and a passion for innovation, I specialize in creating intuitive user interfaces and engaging digital solutions. From web design to mobile applications, I strive to exceed expectations and deliver impactful results. Explore my work to see how I blend creativity with functionality to bring ideas to life
+            </p>
+            <a href="#" class="btn"onclick="mycar()">Contact Information </a>
+           
+        </div>
+    </div>
+
+
+
+    <script>
+
+function openWordFile() {
+    var fileUrl = 'https://cbse.digitallocker.gov.in/public/search/certificates';
+    window.open(fileUrl, '_blank');
+}
+function openme()
+{
+    var fileUrl='https://gamma.app/docs/My-Hobbies-and-Passions-obil433hly76v1k?mode=doc'
+    window.open(fileUrl, '_blank');
+}
+function mychoice()
+{
+    var fileUrl='https://www.coursera.org/professional-certificates'
+    window.open(fileUrl, '_blank')
+}
+function mylife()
+{
+    var fileUrl='https://gamma.app/docs/Rishis-Resume-rnajc9veghs0xe3?mode=doc'
+    window.open(fileUrl, '_blank')
+}
+function mycar()
+{
+    var fileUrl='https://uidai.gov.in/'
+    window.open(fileUrl,'_blank')
+}
+
+</script>
+</body>
+</html>
